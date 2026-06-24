@@ -42,7 +42,7 @@ class casoDePrueba1(unittest.TestCase):
         
         btnIngresar.click()
         
-        time.sleep(2)
+        time.sleep(5)
         
         articuloA = driver.find_element(By.XPATH, "//*[@id='item_4_title_link']")
         nombreArticuloA = articuloA.text
@@ -63,14 +63,15 @@ class casoDePrueba1(unittest.TestCase):
         time.sleep(2)
         
         articuloB = driver.find_element(By.XPATH, "//*[@id='item_3_title_link']")
-        articuloB.click()
         nombreArticuloB = articuloB.text
-        productosAñadidos.append(nombreArticuloB)
+        articuloB.click()
+        
         
         time.sleep(2)
         
         btnAgregarArticulo = driver.find_element(By.NAME , "add-to-cart")
         btnAgregarArticulo.click()
+        productosAñadidos.append(nombreArticuloB)
         
         
         time.sleep(2)

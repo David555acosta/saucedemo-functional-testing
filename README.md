@@ -101,7 +101,9 @@ pip install selenium
 3. Ejecutar el script:
 
 ```
-python saucedemo_test.py
+python caso1.py
+python caso2.py
+python caso3.py
 ```
 
 ---

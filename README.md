@@ -72,12 +72,18 @@ Verifica que la cantidad de productos en el carrito sea correcta.
 ## Estructura del proyecto
 
 ```
-/project-root
+SAUCEDEMO-FUNCTIONAL-TESTING/
 │
-├── saucedemo_test.py
-├── README.md
-├── test_cases.md
-└── evidencias/
+├── capturas/
+│   ├── caso1Capturas/      # Evidencias del login exitoso
+│   ├── caso2Capturas/      # Evidencias de agregado al carrito
+│   └── caso3Capturas/      # Evidencias de validación de cantidad
+│
+├── caso1.py                # Caso de prueba 1
+├── caso2.py                # Caso de prueba 2
+├── caso3.py                # Caso de prueba 3
+│
+└── README.md
 ```
 
 ---
@@ -95,7 +101,9 @@ pip install selenium
 3. Ejecutar el script:
 
 ```
-python saucedemo_test.py
+python caso1.py
+python caso2.py
+python caso3.py
 ```
 
 ---

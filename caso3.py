@@ -29,12 +29,12 @@ class casoDePrueba1(unittest.TestCase):
         contraseña = driver.find_element(By.XPATH, "//*[@id='password']")
         btnIngresar = driver.find_element(By.NAME, "login-button")
         
-        time.sleep(3)
+        time.sleep(5)
         
         nombre.send_keys("standard_user")
         contraseña.send_keys("secret_sauce")
         
-        time.sleep(2)
+        time.sleep(5)
         
         btnIngresar.click()
         
@@ -44,38 +44,38 @@ class casoDePrueba1(unittest.TestCase):
         nombreArticuloA = articuloA.text
         articuloA.click()
         
-        time.sleep(2)
+        time.sleep(5)
         
         btnAgregarArticulo = driver.find_element(By.NAME , "add-to-cart")
         btnAgregarArticulo.click()
         productosAñadidos.append(nombreArticuloA)
         
-        time.sleep(2)
+        time.sleep(5)
         
         btnVolverCatalogo = driver.find_element(By.NAME , "back-to-products")
         btnVolverCatalogo.click()
         
         
-        time.sleep(2)
+        time.sleep(5)
         
         articuloB = driver.find_element(By.XPATH, "//*[@id='item_3_title_link']")
         nombreArticuloB = articuloB.text
         articuloB.click()
         
         
-        time.sleep(2)
+        time.sleep(5)
         
         btnAgregarArticulo = driver.find_element(By.NAME , "add-to-cart")
         btnAgregarArticulo.click()
         productosAñadidos.append(nombreArticuloB)
         
         
-        time.sleep(2)
+        time.sleep(5)
         
         btnVolverCatalogo = driver.find_element(By.NAME , "back-to-products")
         btnVolverCatalogo.click()
         
-        time.sleep(2)
+        time.sleep(5)
         
         carrito = driver.find_element(By.XPATH , "//*[@id='shopping_cart_container']")
         carrito.click()
